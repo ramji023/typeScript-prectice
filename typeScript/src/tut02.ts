@@ -56,28 +56,56 @@ let strArray = ['ram', 'bob', 'zes', 'alex']
 // exampleObject.age = '24';
 
 
-type Student = {
-    name: string,
-    age: number,
-    subject: string[],
-    isActive?: boolean,
+// type Student = {
+//     name: string,
+//     age: number,
+//     subject: string[],
+//     isActive?: boolean,
+// }
+
+// let firstStudent: Student = {
+//     name: "Dave gray",
+//     age: 45,
+//     subject: ['operating system', 'DataTransfer', 'Machine Learning']
+// }
+
+// let secondStudent: Student = {
+//     name: "Alex carry",
+//     age: 35,
+//     subject: ['English', 'DataTransfer', 'Machine Learning'],
+//     isActive: true,
+// }
+
+// firstStudent = secondStudent
+
+
+// const studentName = {
+//     name: "ram Ji Mishra",
+//     age: 34,
+//     subject: ['maths']
+// }
+// const displayStudentName = (student: Student):string => {  // pass object as a parameter
+//     return `hello, Mr. ${student.name}`
+// }
+// console.log(displayStudentName(studentName));
+
+
+//  <----------   enums   ------------------>
+enum Grade {
+    A = 1,
+    B,
+    C,
+    D,
+    E
+}
+console.log(Grade.D)
+
+enum Direction {
+    Up = "UP",
+    Down = "DOWN",
+    Left = "LEFT",
+    Right = "RIGHT"
 }
 
-let firstStudent: Student = {
-    name: "Dave gray",
-    age: 45,
-    subject: ['operating system', 'DataTransfer', 'Machine Learning']
-}
-
-let secondStudent: Student = {
-    name: "Alex carry",
-    age: 35,
-    subject: ['English', 'DataTransfer', 'Machine Learning'],
-    isActive: true,
-}
-
-firstStudent = secondStudent
-
-
-
-
+console.log(Direction.Up);  
+console.log(Direction.Left); 
