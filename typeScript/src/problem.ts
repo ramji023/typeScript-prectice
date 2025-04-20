@@ -62,8 +62,8 @@ console.log(sumArray([1, 2, 3, 4, 5]))
 
 
 //problem -7
-function countVowels(str: string):number {
-  return  str.split('').reduce((sum, letter) => {
+function countVowels(str: string): number {
+    return str.split('').reduce((sum, letter) => {
         if (letter === 'a' || letter === 'e' || letter === 'i' || letter === 'o' || letter === 'u' || letter === 'A' || letter === 'E' || letter === 'I' || letter === 'O' || letter === 'U') {
             return sum + 1;
         }
@@ -73,3 +73,58 @@ function countVowels(str: string):number {
 console.log(countVowels("mango"))
 
 // problem -8 
+interface User {
+    id: number,
+    name: string,
+    isAdmin?: boolean,
+}
+const firstUser = {
+    id: 1,
+    name: "Alex carry",
+    isAdmin: true
+}
+const secondUser = {
+    id: 2,
+    name: "Zasicca",
+}
+
+function printUserInfo(user: User): void {
+    console.log(`${user.id} : ${user?.isAdmin}`)
+}
+
+printUserInfo(firstUser);
+printUserInfo(secondUser);
+
+
+// problem - 9
+function add(a: number, b: number): number {
+    return a + b
+}
+console.log(add(23, 34))
+
+
+
+//problem - 10
+function printId(id: number | string): void {
+    typeof id === "number" ? console.log('id is a number') : console.log("id is a string")
+}
+printId(234)
+printId("Ram")
+
+
+// problem - 11
+function identity<T>(data: T): T {
+    return data;
+}
+
+console.log(identity(23))
+console.log(identity(true))
+console.log(identity("Hey"))
+console.log(identity([12, 34, 4, true]))
+console.log(identity({ id: 1, name: "Ram Ji Mishra", age: 24 }))
+
+
+// problem - 12
+const input = document.getElementById("username") as HTMLInputElement
+console.log(input.value)
+

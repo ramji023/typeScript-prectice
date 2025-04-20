@@ -61,4 +61,40 @@ function countVowels(str) {
     }, 0);
 }
 console.log(countVowels("mango"));
-// problem -8 
+const firstUser = {
+    id: 1,
+    name: "Alex carry",
+    isAdmin: true
+};
+const secondUser = {
+    id: 2,
+    name: "Zasicca",
+};
+function printUserInfo(user) {
+    console.log(`${user.id} : ${user === null || user === void 0 ? void 0 : user.isAdmin}`);
+}
+printUserInfo(firstUser);
+printUserInfo(secondUser);
+// problem - 9
+function add(a, b) {
+    return a + b;
+}
+console.log(add(23, 34));
+//problem - 10
+function printId(id) {
+    typeof id === "number" ? console.log('id is a number') : console.log("id is a string");
+}
+printId(234);
+printId("Ram");
+// problem - 11
+function identity(data) {
+    return data;
+}
+console.log(identity(23));
+console.log(identity(true));
+console.log(identity("Hey"));
+console.log(identity([12, 34, 4, true]));
+console.log(identity({ id: 1, name: "Ram Ji Mishra", age: 24 }));
+// problem - 12
+const input = document.getElementById("username");
+console.log(input.value);
